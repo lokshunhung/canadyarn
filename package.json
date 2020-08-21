@@ -55,7 +55,11 @@
         }
     },
     "lint-staged": {
-        "*.{js,json,md,ts}": "prettier --write"
+        "*.{js,ts}": [
+            "eslint --ext .js,.ts",
+            "prettier --write"
+        ],
+        "*.{json,md}": "prettier --write"
     },
     "commitlint": {
         "extends": [
