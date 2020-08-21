@@ -1,0 +1,17 @@
+# IDE
+/.idea/**
+/.vscode/**
+
+# Artifacts
+/dist/**
+
+# Dependencies
+/node_modules/**
+
+# Temporary
+/tmp/**
+
+# Misc
+**/.DS_Store
+**/*.iml
+**/yarn-error.log
