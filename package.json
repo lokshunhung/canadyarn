@@ -45,7 +45,7 @@
         "bin/*",
         "dist/*",
         "CHANGELOG.md",
-        "LICENSE.md",
+        "LICENSE",
         "README.md"
     ],
     "husky": {
