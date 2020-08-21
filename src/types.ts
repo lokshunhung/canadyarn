@@ -18,4 +18,4 @@ export type ParseResult = {
     object: Record<QualifiedName, DependencyResolution>;
 };
 
-export type CheckableDependencies = Record<DependencyName, Record<Version, DependencyResolution[] | undefined>>;
+export type CheckableDependencies = Record<DependencyName, Record<Version, DependencyResolution[]>>;

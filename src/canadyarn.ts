@@ -76,7 +76,7 @@ try {
         buffer.push(cb.yellowBright("[check-yarn-lock-single-version]"));
         buffer.push(": an unknown error occurred");
         buffer.push("\n");
-        let message: string;
+        let message: string | undefined;
         if (typeof error === "string") {
             message = error;
         } else if (typeof error === "object" && "message" in error && typeof error.message === "string") {

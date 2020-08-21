@@ -4,7 +4,7 @@ import type {CheckableDependencies, DependencyName, MultipleVersionErrorMessage,
 
 export function checkYarnLock(checkSingleVersionDependencies: ReadonlyArray<DependencyName>, lockfile: Readonly<ParseResult>): MultipleVersionErrorMessage[] {
     const checkableDeps: CheckableDependencies = (function () {
-        const checkableDeps = {};
+        const checkableDeps: CheckableDependencies = {};
         checkSingleVersionDependencies.forEach(dep => {
             checkableDeps[dep] = {};
         });
