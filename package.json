@@ -1,0 +1,87 @@
+{
+    "name": "canadyarn",
+    "description": "Check specific packages to have a single resolved version in yarn.lock",
+    "version": "0.0.1",
+    "license": "MIT",
+    "author": "Lok Shun Hung <61226932+lokshunhung@users.noreply.github.com> (https://github.com/lokshunhung)",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lokshunhung/yarn-lock-single-resolution.git"
+    },
+    "main": "dist/index.js",
+    "bin": "bin/canadyarn.js",
+    "scripts": {
+        "clean": "rimraf dist/",
+        "build": "tsc",
+        "lint": "eslint --ext .js,.ts .",
+        "format": "prettier --write \"**/*.{js,json,md,ts}\"",
+        "release": "standard-version"
+    },
+    "dependencies": {
+        "@yarnpkg/lockfile": "^1.1.0",
+        "chalk": "^4.1.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^9.1.2",
+        "@commitlint/config-conventional": "^9.1.2",
+        "@types/node": "^14.6.0",
+        "@typescript-eslint/eslint-plugin": "^3.9.1",
+        "@typescript-eslint/parser": "^3.9.1",
+        "eslint": "^7.7.0",
+        "eslint-config-prettier": "^6.11.0",
+        "husky": "3",
+        "lint-staged": "^10.2.11",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2",
+        "standard-version": "^9.0.0",
+        "typescript": "^4.0.2"
+    },
+    "engines": {
+        "node": ">= 12.0.0",
+        "yarn": ">= 1.0.0"
+    },
+    "files": [
+        "bin/*",
+        "dist/*",
+        "CHANGELOG.md",
+        "LICENSE.md",
+        "README.md"
+    ],
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "lint-staged": {
+        "*.{js,json,md,ts}": "prettier --write"
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
+    "eslintConfig": {
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "eslint:recommended",
+            "plugin:@typescript-eslint/recommended",
+            "prettier",
+            "prettier/@typescript-eslint"
+        ],
+        "parser": "@typescript-eslint/parser",
+        "parserOptions": {
+            "ecmaVersion": 2020,
+            "sourceType": "module"
+        }
+    },
+    "prettier": {
+        "arrowParens": "avoid",
+        "bracketSpacing": false,
+        "printWidth": 200,
+        "tabWidth": 4,
+        "trailingComma": "es5"
+    }
+}

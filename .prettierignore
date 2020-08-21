@@ -12,7 +12,5 @@
 # Temporary
 /tmp/**
 
-# Misc
-**/.DS_Store
-**/*.iml
-**/yarn-error.log
+# (Generated) Markdown Files
+/CHANGELOG.md
