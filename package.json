@@ -4,9 +4,10 @@
     "version": "0.0.1",
     "license": "MIT",
     "author": "Lok Shun Hung <61226932+lokshunhung@users.noreply.github.com> (https://github.com/lokshunhung)",
+    "homepage": "https://github.com/lokshunhung/canadyarn",
     "repository": {
         "type": "git",
-        "url": "https://github.com/lokshunhung/yarn-lock-single-resolution.git"
+        "url": "https://github.com/lokshunhung/canadyarn.git"
     },
     "main": "dist/index.js",
     "bin": "bin/canadyarn.js",

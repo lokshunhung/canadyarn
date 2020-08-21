@@ -7,4 +7,4 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* add canadyarn implementation ([5ad7b14](https://github.com/lokshunhung/yarn-lock-single-resolution/commit/5ad7b14e083633ae5470e9f526cdb26a93fcb9ce))
+* add canadyarn implementation ([5ad7b14](https://github.com/lokshunhung/canadyarn/commit/5ad7b14e083633ae5470e9f526cdb26a93fcb9ce))
