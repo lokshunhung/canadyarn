@@ -1,7 +1,7 @@
 {
     "name": "canadyarn",
     "description": "Check specific packages to have a single resolved version in yarn.lock",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "MIT",
     "author": "Lok Shun Hung <61226932+lokshunhung@users.noreply.github.com> (https://github.com/lokshunhung)",
     "homepage": "https://github.com/lokshunhung/canadyarn",
