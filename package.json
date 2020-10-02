@@ -48,12 +48,6 @@
         "LICENSE",
         "README.md"
     ],
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged",
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-        }
-    },
     "lint-staged": {
         "*.{js,ts}": [
             "eslint --ext .js,.ts",
