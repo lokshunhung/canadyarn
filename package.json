@@ -48,11 +48,6 @@
         "LICENSE",
         "README.md"
     ],
-    "commitlint": {
-        "extends": [
-            "@commitlint/config-conventional"
-        ]
-    },
     "eslintConfig": {
         "env": {
             "node": true
