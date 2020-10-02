@@ -47,12 +47,5 @@
         "CHANGELOG.md",
         "LICENSE",
         "README.md"
-    ],
-    "prettier": {
-        "arrowParens": "avoid",
-        "bracketSpacing": false,
-        "printWidth": 200,
-        "tabWidth": 4,
-        "trailingComma": "es5"
-    }
+    ]
 }
