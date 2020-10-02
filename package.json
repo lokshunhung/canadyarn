@@ -48,13 +48,6 @@
         "LICENSE",
         "README.md"
     ],
-    "lint-staged": {
-        "*.{js,ts}": [
-            "eslint --ext .js,.ts",
-            "prettier --write"
-        ],
-        "*.{json,md}": "prettier --write"
-    },
     "commitlint": {
         "extends": [
             "@commitlint/config-conventional"
