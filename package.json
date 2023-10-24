@@ -23,7 +23,7 @@
         "chalk": "^5.0.0"
     },
     "devDependencies": {
-        "@commitlint/cli": "^17.0.0",
+        "@commitlint/cli": "^18.0.0",
         "@commitlint/config-conventional": "^18.0.0",
         "@types/node": "^20.1.0",
         "@typescript-eslint/eslint-plugin": "^4.3.0",
